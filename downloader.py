@@ -18,6 +18,7 @@ def fetch_from_url (url):
 	print('[info] Url found: ' + url)
 
 	base_dir = 'downloads'
+	url = url.rstrip()
 	url_parts = url.split('/')
 	dir_name = base_dir + '/' + url_parts[len(url_parts) - 1]
 
